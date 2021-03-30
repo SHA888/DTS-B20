@@ -1,152 +1,194 @@
 body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-.container{
-	width: 1200px;
-	margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
-	color: black;
-	text-transform: uppercase;
-	font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+  font-size: 30px;
 }
 h2 {
-	font-size: 18px;
+  font-size: 18px;
 }
 h3 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 30px;
 }
 
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+  height: 110px;
+  border-bottom: 3px solid #77a466;
+  margin: 0 auto;
 }
 
 header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
+  float: left;
+  margin: 0;
+  padding: 38px 0;
 }
 header h1 span {
-	color: #77a466;
+  color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+  float: right;
+  padding: 46px 0;
 }
 header nav ul {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 10px;
+  display: inline;
 }
-header nav ul li a{
-	text-decoration: none;
-	color:#77a466;
+header nav ul li a {
+  text-decoration: none;
+  color: #77a466;
 }
 
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	clear: both;
+  margin: 0 auto;
+  clear: both;
 }
 
 .main-image {
-	height: auto;
-	float: left;
+  height: auto;
+  float: left;
 }
 .main-image img {
-	border-bottom: 3px solid #77a466;
+  border-bottom: 3px solid #77a466;
 }
 
 .main-title {
-	height: auto;
-	float: left;
+  height: auto;
+  float: left;
 }
 .main-title h2 {
-	text-align: left;
-	padding: 5px 0;
-	color: #77a466;
+  text-align: left;
+  padding: 5px 0;
+  color: #77a466;
 }
 .main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 399px;
-	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
+  width: 33.333%;
+  height: auto;
+  float: left;
+  border-top: 1px solid #eee;
 }
 
 .section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+  padding: 10px 0px;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .menu {
-	list-style: none;
-	padding: 0;
+  list-style: none;
+  padding: 0;
 }
 .menu li {
-	padding: 10px 0;
-	color:#77a466;
+  padding: 10px 0;
+  color: #77a466;
 }
 
 .reviews {
-	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+  color: #333;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 footer {
-	height: 50px;
-	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
-	text-align: center;
+  height: 50px;
+  border-top: 3px solid #eee;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
 }
 footer span {
-	font-family: 'Galada', cursive;
-	text-transform: lowercase;
-	color: #77a466;
-	font-size: 14px;
+  font-family: "Galada", cursive;
+  text-transform: lowercase;
+  color: #77a466;
+  font-size: 14px;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1000px) {
+  header {
+    width: 90%;
+    max-width: 1000px;
+  }
+  .main-image img {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .top-section {
+    padding: 0 30px;
+  }
+  .section-one {
+    padding: 0 30px;
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    width: fit-content;
+  }
+}
+
+/* ===== Smartphone ===== */
+@media (max-width: 670px) {
+  header {
+    width: 90%;
+    max-width: 670px;
+  }
+  .main-image img {
+    width: 100%;
+    max-width: 670px;
+  }
+  .top-section {
+    padding: 0 30px;
+  }
+  .section-one {
+    padding: 0 30px;
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    width: fit-content;
+  }
 }
